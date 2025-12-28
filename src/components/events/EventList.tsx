@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, Layers, MapPin, Music, Trophy, Users } from "lucide-react";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 
 interface EventListProps {
   category: string;
@@ -94,7 +94,9 @@ export default function EventList({ category, events }: EventListProps) {
                   <CardHeader>
                     <div className="flex justify-between items-start mb-2">
                       <span className="text-xs font-mono text-primary bg-primary/10 px-2 py-1 rounded">{event.code}</span>
-                      {event.requiresPayment && <span className="text-xs font-bold text-secondary">PAID</span>}
+                      <span className="text-xs font-bold text-secondary">
+                        {event.registrationFee === "0" || event.registrationFee === 0 ? "Free" : event.registrationFee}
+                      </span>
                     </div>
                     <CardTitle className="text-xl group-hover:text-primary transition-colors">{event.title}</CardTitle>
                   </CardHeader>

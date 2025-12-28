@@ -5,7 +5,7 @@ import Footer from "@/components/landing/Footer";
 import Navbar from "@/components/landing/Navbar";
 import { Button } from "@/components/ui/button";
 import { events } from "@/data/events";
-import { useNavigate, useParams } from "react-router";
+import { useNavigate, useParams } from "react-router-dom";
 
 export default function Events() {
   const navigate = useNavigate();

@@ -1,5 +1,5 @@
 import { Instagram, Mail, MapPin, Phone } from "lucide-react";
-import { Link, useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -97,6 +97,12 @@ export default function Footer() {
               <a href="https://www.instagram.com/prerana.bengaluru" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
                 <Instagram className="w-5 h-5" />
               </a>
+              <button
+                onClick={() => window.location.href = "mailto:preranablr@gitam.in"}
+                className="w-10 h-10 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer"
+              >
+                <Mail className="w-5 h-5" />
+              </button>
             </div>
           </div>
         </div>

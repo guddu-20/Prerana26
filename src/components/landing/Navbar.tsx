@@ -8,7 +8,7 @@ import {
 import { motion } from "framer-motion";
 import { ChevronDown, Menu } from "lucide-react";
 import { useState } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const navigate = useNavigate();

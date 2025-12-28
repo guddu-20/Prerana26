@@ -2,7 +2,7 @@ import Footer from "@/components/landing/Footer";
 import Navbar from "@/components/landing/Navbar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import { Download } from "lucide-react";
 import { useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
@@ -30,7 +30,7 @@ export default function Sponsors() {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
               Prerana 2026 is made possible by the generous support of our partners.
             </p>
-            <Button onClick={() => navigate("/sponsors/partner-with-us")}>
+            <Button onClick={() => navigate("/contact")}>
               Partner With Us
             </Button>
           </div>

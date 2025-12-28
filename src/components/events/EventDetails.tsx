@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { ArrowLeft, Calendar, CheckCircle2, Clock, Layers, MapPin, Trophy, Users } from "lucide-react";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 
 interface EventDetailsProps {
   event: any; // Ideally type this

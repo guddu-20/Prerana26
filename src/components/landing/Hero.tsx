@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { Calendar, MapPin } from "lucide-react";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 
 export default function Hero() {
   const navigate = useNavigate();
@@ -59,13 +59,7 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="flex flex-col items-center w-full"
           >
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/40 text-white border border-white/20 mb-4 backdrop-blur-md">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
-              </span>
-              <span className="text-xs font-medium">Coming Jan 2026</span>
-            </div>
+            {/* 'Coming Jan 2026' badge removed per request */}
 
           </motion.div>
         </div>

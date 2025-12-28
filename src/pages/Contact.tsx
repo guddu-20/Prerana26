@@ -120,7 +120,7 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold text-lg mb-1">Campus Location</h3>
                       <p className="text-muted-foreground text-sm leading-relaxed">
-                        PRERANA Organising Committee<br />
+                        Directorate of Student Life<br />
                         GITAM University – Bengaluru Campus<br />
                         Nagadenahalli, Doddaballapur Taluk<br />
                         Bengaluru Rural District, Karnataka – 562163, India
